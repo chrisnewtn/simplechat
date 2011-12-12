@@ -32,14 +32,15 @@ io.sockets.on('connection', function (socket) {
   // When a message is recieved
   socket.on('msg', function (data) {
     data.timestamp = new Date();
-    data.msg = censor(data.msg);
-    if (censorMessages) socket.emit('msg', data);
+    if (censorMessages) data.msg = censor(data.msg);
+    socket.emit('msg', data);
     socket.broadcast.emit('msg', data);
   });
 });
 
 function censor(msg) {
   var swears = {
+    // lol a source file with naughty words
     'shit':'ship',
     'crap':'crop',
     'fuck':'funk',
