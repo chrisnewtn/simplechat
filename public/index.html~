@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>House Chat 3000</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/javascripts/script.js"></script>
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css" />
+  </head>
+  <body>
+    <form id="inputarea">
+      <input id="color" type="text" value="#000" size="5" placeholder="color" />
+      <input id="name" type="text" size="8" placeholder="your name" />
+      <input id="msg" type="text" val="message" placeholder="your message" style="width:400px;" />
+      <input id="send" type="submit" value="Send">
+      <span id="status"></span>
+    </form>
+    <div id="chat"></div>
+  </body>
+</html>
