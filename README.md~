@@ -2,7 +2,7 @@
 
 I wanted to see how quickly I could code a chat server with sockets. I've never used node.js before and this took me about 2 hours to figure out completely. 
 
-Obviously it's still far from perfect, but it gives you some idea as to how parts of [socket.io](http://socket.io/), [node.js](http://nodejs.org/) and [express](http://expressjs.com/) work I suppose.
+Obvously it's still far from perfect, but it gives you some idea as to how parts of socket.io, node and express work I suppose.
 
 
 ## How to run
