@@ -28,7 +28,7 @@ $('document').ready(function() {
   $('#color').focus();
   $('#send').click(sendMessage);
 });
-var socket = io.connect('http://shiny-linux.local');
+var socket = io.connect('http://localhost');
 socket.on('msg', receiveMessage);
 
 
